@@ -2,12 +2,12 @@ package lastpencil;
 
 import java.util.Random;
 
-public class Bot extends Player {
+public class Computer extends Player {
     Random random;
 
-    public Bot(String name, Random random) {
+    public Computer(String name) {
         super(name);
-        this.random = random;
+        this.random = new Random();
     }
 
     public int chooseNumber(int numberOfPencils) {
